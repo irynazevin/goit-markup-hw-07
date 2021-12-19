@@ -1,0 +1,47 @@
+.works-section {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.work-heading {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+}
+.work-heading-ul {
+  display: flex;
+}
+.work-heading-li {
+  margin-right: 30px;
+  position: relative;
+}
+
+.work-heading-li3:last-child {
+  margin-right: 0;
+}
+.works-animation {
+  position: absolute;
+  width: 100%;
+  height: 70px;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.works-animation-titlt {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

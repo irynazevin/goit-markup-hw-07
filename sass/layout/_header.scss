@@ -1,0 +1,136 @@
+.header {
+  background: #ffffff;
+  margin: 0 auto;
+  align-items: center;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.menu-links {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.header-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+  position: relative;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+.header-link.curent {
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+    position: absolute;
+    left: 0;
+    bottom: -34px;
+  }
+}
+
+.header-item-st {
+  margin-right: 45px;
+}
+.header-item-potfolio {
+  margin-right: 55px;
+}
+.mail {
+  margin-right: 50px;
+}
+
+.web-blue {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: #2196f3;
+}
+.studio-black {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  color: #212121;
+}
+
+.header-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  margin-right: 93px;
+}
+
+.menu-links {
+  display: flex;
+  align-items: center;
+}
+.menu-contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+.header-telephone,
+.menu-contacts,
+.header-mail {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #757575;
+  &:hover,
+  &:focus {
+    color: #2196f3;
+  }
+}
+.header-telephone {
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-mail {
+  cursor: pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-social-list,
+.menu-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-social-icon {
+  fill: currentColor;
+  margin-right: 10px;
+}
+.header-social-item {
+  margin-left: 10px;
+  align-content: center;
+}
+.web-blue,
+.studio-wiete,
+.studio-black {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}

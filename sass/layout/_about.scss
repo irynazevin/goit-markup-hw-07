@@ -1,0 +1,47 @@
+.about {
+  padding-top: 89px;
+  padding-bottom: 47px;
+}
+.about-details {
+  display: flex;
+}
+.details {
+  width: 270px;
+  margin-right: 30px;
+}
+
+.details-heading {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.details-paragraph {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  width: 270px;
+  height: 75px;
+  left: 214px;
+  top: 800px;
+}
+.about-social-icon {
+  fill: currentColor;
+}
+.about-img {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  + .about-img {
+    margin-right: 0;
+  }
+}
