@@ -62,12 +62,12 @@
   &:focus {
     border-color: #2196f3;
   }
+  &:focus + .input-icon {
+    fill: #2196f3;
+  }
 }
 
-.modal-input:focus + .input-icon {
-  fill: #2196f3;
-}
-.input-wrap {
+.modal-input .input-wrap {
   position: relative;
 }
 .input-icon {

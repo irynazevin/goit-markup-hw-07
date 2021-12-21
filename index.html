@@ -1,58 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <Link rel="stylesheet" href="./css/main.min.css" />
-</head>
-<body>
-<header class="header">
-        <div class="container header-container">
-            <a href="" class="header-logo link">
-                <span class="web-blue">Web</span><span class="studio-black">Studio</span> </a>
-            <nav class="header-navigation">
-                <ul class="menu-links list">
-                    <li class="header-item-st"><a href="" class="header-link curent link">Студия</a> </li>
-                    <li class="header-item-potfolio"><a href="./portfolio.html" class="header-link link">Портфолио</a> </li>
-                    <li class="header-item-cont"><a href="" class="header-link  link">Контакты</a> </li>
-                </ul>
-            </nav>
-                <ul class="menu-contacts menu-social-list list">
-                    <li class="mail header-social-item "><a href="" class="header-mail menu-social-link link">
-                        <svg class="header-social-icon"
-                                     width="16"
-                                     height="12">
-                                        <use href="./images/icons/symbol-defs.svg#icon-envelope-1">
-                                        </use>
-                                    </svg>
-                                    info@devstudio.com</a></li>
-                    <li class="mail header-social-item "><a href="" class="header-telephone menu-social-link link"><svg class="header-social-icon" width="10" height="16">
-                        <use href="./images/icons/symbol-defs.svg#icon-smartphone-1">
-                        </use>
-                    </svg> +38 096 111 11 11</a></li>
-                </ul>
-        </div>      
-</header>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700;900&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="" class="logo link">
+          <span class="web-blue">Web</span><span class="studio-black">Studio</span>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-list list ">
+            <li class="header-list__item"><a href="" class="header-list__link curent link">Студия</a></li>
+            <li class="header-list__potfolio">
+              <a href="./portfolio.html" class="header-list__link link">Портфолио</a>
+            </li>
+            <li><a href="" class="header-list__link link">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="contacts-list menu-social-list list">
+          <li class="contacts-list__item">
+            <a href="" class="contacts-list__link link">
+              <svg class="contacts-list__icon icon-mail" width="16" height="12">
+                <use href="./images/icons/symbol-defs.svg#icon-envelope-1"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-list__item">
+            <a href="" class="contacts-list__link link"
+              ><svg class="contacts-list__icon icon-telefon" width="10" height="16">
+                <use href="./images/icons/symbol-defs.svg#icon-smartphone-1"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
 
- 
+        <button class="menu-button" type="button"data-menu-button aria-expanded="false">
+          <svg class="menu-bt-icon" width="40" height="40">
+            <use class="icon-open" href="./images/icons/symbol-defs.svg#icon-menu-open"></use>
+            <use class="icon-close" href="./images/icons/symbol-defs.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+
+        <div class="modal-menu" data-menu>
+          
+              <div class="modal-menu-list__wraper">
+            <ul class="modal-menu__list list">
+                
+                    <li class="modal-menu__item">
+                        <a class="modal-menu__link link" href="./index.html">Студия</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a class="modal-menu__link link" href="./portfolio.html">Портфолио</a>
+                    </li>
+                    <li class="modal-menu__item">
+                        <a class="modal-menu__link link" href="./index.html">Контакты</a>
+                    </li>
+                    </ul>
+
+                    <ul class="modal-menu__contacts list">
+                    <li class="modal-menu__contacts-item link">
+                        <a class="modal-menu__contacts-link tel" href="tel:+38 096 111 11 11"
+                        >+38 096 111 11 11</a
+                        >
+                    </li>
+                    <li class="modal-menu__contacts-item link">
+                        <a class="modal-menu__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    </ul>
+                 </div>
+            <ul class="socials list">
+              <li class="socials__item link">
+                <a class="socials__link" href="./index.html">Instagram</a>
+              </li>
+              <li class="socials__item link">
+                <a class="socials__link" href="./portfolio.html">Twitter</a>
+              </li>
+              <li class="socials__item link">
+                <a class="socials__link" href="./index.html">Facebook</a>
+              </li>
+              <li class="socials__item link">
+                <a class="socials__link" href="./index.html">LinkedIn</a>
+              </li>
+            </ul>
+          
+        </div>
+      </div>
+    </header>
 
     <main>
-            <section class="hero">
-                <div class="container">
-                    <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="bt-hero" data-modal-open>Заказать услугу</button>
-                </div>
-            </section>
+      <section class="hero overlay">
+        <div class="container">
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="bt-hero" data-modal-open>Заказать услугу</button>
+        </div>
+      </section>
 
-            <section  class="about">
+      <!-- <section  class="about">
                 <div class="container">
                     <ul class="about-details">
                         <li class="details list">
@@ -111,10 +176,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-    
+            </section> -->
 
-            <section class="works-section">
+      <!-- <section class="works-section">
                 <div class="container">
                     <h2 class="work-heading">Чем мы занимаемся</h2>
                     <ul class="work-heading-ul">
@@ -144,9 +208,9 @@
                         </li>
                     </ul>
                 </div>
-            </section>
-        
-        <section class="command-section">
+            </section> -->
+
+      <!-- <section class="command-section">
             <div class="container">
 
                 <h2 class="command-heading">Наша команда</h2>
@@ -344,8 +408,8 @@
                     </li>
                 </ul>
             </div>
-        </section>
-        <section class="clients">
+        </section>  -->
+      <!-- <section class="clients">
             <div class="container">
                 <h2 class="clients-heading">Постоянные клиенты</h2>
                     <ul class="clients-ul list">
@@ -405,10 +469,9 @@
                                         </li>
                         </div>
                     </ul>
-        </section>
+        </section> -->
     </main>
-    <footer class="footer">
-        <section>
+    <!-- <footer class="footer">
             <div class="container footer-position">
                 <div class="footer-left">
                         <a href="" class="header-logo-footer link">
@@ -479,10 +542,8 @@
                     </form>
                 </div>
             </div>
-        </section>
-
-    </footer>
-        <div class="backdrop is-hidden" data-modal>
+    </footer>-->
+    <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                 <button type="button" class="modal-close-btn" data-modal-close>
                     <svg class="button-icon" width="11" height="11">
@@ -574,6 +635,7 @@
                 </form>
             </div>
         </div>
-        <script src="./js/modal.js"></script>
-</body>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+  </body>
 </html>

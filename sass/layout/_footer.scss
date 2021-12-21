@@ -4,12 +4,17 @@
   background: #2f303a;
   margin: 0 auto;
 }
-
 .studio-wiete {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
   color: #ffffff;
 }
 .footer-address {
   color: #ffffff;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 .footer-address,
 .footer-telephone,
@@ -24,10 +29,6 @@
   justify-content: center;
 }
 
-.footer-address {
-  margin-top: 20px;
-  margin-bottom: 9px;
-}
 .class-links-footer {
   margin-bottom: 9px;
 }
