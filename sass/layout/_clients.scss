@@ -1,57 +1,63 @@
-.clients {
-  padding-top: 94px;
-  padding-bottom: 91px;
-}
-.clients-heading {
-  font-weight: bold;
+.clients__title {
+  font-style: normal;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
   margin-bottom: 50px;
 }
-.clients-item {
-  color: #afb1b8;
-}
-.clients-link:hover,
-.clients-link:focus {
-  color: #2196f3;
-  border: 1px solid;
-}
-.clients-img {
+.clients-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.clients-item {
-  & + .clients-item {
-    margin-left: 0px;
+  flex-wrap: wrap;
+  @include mq(desktop) {
+    flex-wrap: nowrap;
   }
-}
-.clients-link {
-  width: 170px;
-  height: 92px;
-  display: flex;
-  color: #afb1b8;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 16px;
-  cursor: pointer;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.clients-item {
-  margin-right: 30px;
-  color: #afb1b8;
-}
-.clients-icon {
-  justify-content: center;
-  align-items: center;
-  fill: currentColor;
+  &__icon {
+    fill: #afb1b8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .clients-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    box-sizing: border-box;
+    border-radius: 4px;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover {
+      border: 1px solid #2196f3;
+      border-radius: 4px;
+    }
+    &:focus {
+      border: 1px solid #2196f3;
+      border-radius: 4px;
+    }
+    &:hover svg {
+      fill: #2196f3;
+    }
+    &:focus svg {
+      fill: #2196f3;
+    }
+  }
+
+  .clients-list__item {
+    width: calc(100 / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+
+    @include mq(tablet) {
+      width: calc(100% / 3 - 30px);
+      margin-left: 30px;
+    }
+    @include mq(desktop) {
+      display: flex;
+      flex-wrap: nowrap;
+      &__item:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+  }
 }
